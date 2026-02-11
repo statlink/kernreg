@@ -1,0 +1,139 @@
+[
+    {
+        "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+        "file_last_write": 1768069118.0,
+        "definitions": [
+            {
+                "usr": "c:@F@standardize_x#&$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#S0_#&$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#S2_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "standardize_x(Rcpp::NumericMatrix &, Rcpp::NumericMatrix &, Rcpp::NumericVector &, Rcpp::NumericVector &)",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 12,
+                "column": 13,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@to_matrix_copy#*$@S@SEXPREC#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "to_matrix_copy(SEXP)",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 39,
+                "column": 15,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@KernRegWorkerMultiH1",
+                "kind": 3,
+                "parent_name": "",
+                "name": "KernRegWorkerMultiH1",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 93,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@KernRegWorkerMultiH1@F@operator()#k#k#",
+                "kind": 7,
+                "parent_name": "KernRegWorkerMultiH1",
+                "name": "operator(std::size_t, std::size_t)",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 110,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@KernRegWorkerSingleH1",
+                "kind": 3,
+                "parent_name": "",
+                "name": "KernRegWorkerSingleH1",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 149,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@KernRegWorkerSingleH1@F@operator()#k#k#",
+                "kind": 7,
+                "parent_name": "KernRegWorkerSingleH1",
+                "name": "operator(std::size_t, std::size_t)",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 166,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@KernRegWorkerMultiH1Mat",
+                "kind": 3,
+                "parent_name": "",
+                "name": "KernRegWorkerMultiH1Mat",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 200,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@KernRegWorkerMultiH1Mat@F@operator()#k#k#",
+                "kind": 7,
+                "parent_name": "KernRegWorkerMultiH1Mat",
+                "name": "operator(std::size_t, std::size_t)",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 216,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@KernRegWorkerMultiHList",
+                "kind": 3,
+                "parent_name": "",
+                "name": "KernRegWorkerMultiHList",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 255,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@KernRegWorkerMultiHList@F@operator()#k#k#",
+                "kind": 7,
+                "parent_name": "KernRegWorkerMultiHList",
+                "name": "operator(std::size_t, std::size_t)",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 281,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@kern_reg_parallel#1*$@S@SEXPREC#1S0_#1S0_#1$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#$@N@std@N@__cxx11@S@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@S@allocator>#C#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "kern_reg_parallel(const SEXP, const SEXP, const SEXP, const Rcpp::NumericVector, std::string, int)",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 325,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@kern_reg_cpp#1*$@S@SEXPREC#1S0_#1S0_#1$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#$@N@std@N@__cxx11@S@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@S@allocator>#C#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "kern_reg_cpp(const SEXP, const SEXP, const SEXP, const Rcpp::NumericVector, std::string)",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 436,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@kern_reg#1*$@S@SEXPREC#1S0_#1S0_#1$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#$@N@std@N@__cxx11@S@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@S@allocator>#C#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "kern_reg(const SEXP, const SEXP, const SEXP, const Rcpp::NumericVector, std::string, int)",
+                "file": "C:/Users/mtsag/Documents/GitHub/kernreg/src/kern_reg_cpp.cpp",
+                "line": 663,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    }
+]
