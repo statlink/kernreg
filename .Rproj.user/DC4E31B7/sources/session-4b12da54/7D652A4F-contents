@@ -1,9 +1,0 @@
-useDynLib(kernreg, .registration=TRUE)
-exportPattern("^[[:alpha:]]+")
-
-importFrom(Rcpp, evalCpp)
-importFrom(RcppParallel, RcppParallelLibs)
-importFrom("Rfast", colmeans)
-importFrom("Rfast2", Sample.int)
-importFrom("graphics", abline, lines, points)
-

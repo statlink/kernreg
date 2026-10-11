@@ -48,6 +48,10 @@
 # define __BFLT16_DENORM_MIN__ 9.18354961579912115600575419704879436e-41BF16
 #endif
 
+#ifndef __cpp_impl_three_way_comparison
+# define __cpp_impl_three_way_comparison 201907L
+#endif
+
 #ifndef __INTMAX_C
 # define __INTMAX_C(c) c ## LL
 #endif
@@ -58,6 +62,10 @@
 
 #ifndef __MINGW32__
 # define __MINGW32__ 1
+#endif
+
+#ifndef __cpp_designated_initializers
+# define __cpp_designated_initializers 201707L
 #endif
 
 #ifndef __UINT8_MAX__
@@ -236,6 +244,10 @@
 # define __LDBL_MAX__ 1.18973149535723176502126385303097021e+4932L
 #endif
 
+#ifndef __cpp_impl_coroutine
+# define __cpp_impl_coroutine 201902L
+#endif
+
 #ifndef __FLT64X_MAX_10_EXP__
 # define __FLT64X_MAX_10_EXP__ 4932
 #endif
@@ -340,6 +352,10 @@
 # define __INT64_C(c) c ## LL
 #endif
 
+#ifndef __cpp_impl_destroying_delete
+# define __cpp_impl_destroying_delete 201806L
+#endif
+
 #ifndef __GCC_ATOMIC_POINTER_LOCK_FREE
 # define __GCC_ATOMIC_POINTER_LOCK_FREE 2
 #endif
@@ -396,6 +412,10 @@
 # define __FLT_EPSILON__ 1.19209289550781250000000000000000000e-7F
 #endif
 
+#ifndef __cpp_char8_t
+# define __cpp_char8_t 202207L
+#endif
+
 #ifndef __GXX_WEAK__
 # define __GXX_WEAK__ 1
 #endif
@@ -420,6 +440,10 @@
 # define __DEC32_MAX__ 9.999999E96DF
 #endif
 
+#ifndef __CHAR8_TYPE__
+# define __CHAR8_TYPE__ unsigned char
+#endif
+
 #ifndef __cpp_threadsafe_static_init
 # define __cpp_threadsafe_static_init 200806L
 #endif
@@ -440,6 +464,10 @@
 # define __INT_WIDTH__ 32
 #endif
 
+#ifndef __GCC_ATOMIC_CHAR8_T_LOCK_FREE
+# define __GCC_ATOMIC_CHAR8_T_LOCK_FREE 2
+#endif
+
 #ifndef __DECIMAL_DIG__
 # define __DECIMAL_DIG__ 21
 #endif
@@ -454,6 +482,10 @@
 
 #ifndef __FLT64_MIN_EXP__
 # define __FLT64_MIN_EXP__ (-1021)
+#endif
+
+#ifndef __cpp_using_enum
+# define __cpp_using_enum 201907L
 #endif
 
 #ifndef __FLT64X_MIN_10_EXP__
@@ -478,6 +510,10 @@
 
 #ifndef _REENTRANT
 # define _REENTRANT 1
+#endif
+
+#ifndef __cpp_consteval
+# define __cpp_consteval 202211L
 #endif
 
 #ifndef __FLT64X_MANT_DIG__
@@ -621,7 +657,7 @@
 #endif
 
 #ifndef __cplusplus
-# define __cplusplus 201703L
+# define __cplusplus 202002L
 #endif
 
 #ifndef __cpp_ref_qualifiers
@@ -888,6 +924,10 @@
 # define __FLT128_MAX_EXP__ 16384
 #endif
 
+#ifndef __cpp_conditional_explicit
+# define __cpp_conditional_explicit 201806L
+#endif
+
 #ifndef __FLT32_MANT_DIG__
 # define __FLT32_MANT_DIG__ 24
 #endif
@@ -898,6 +938,10 @@
 
 #ifndef __FLT32X_MIN_EXP__
 # define __FLT32X_MIN_EXP__ (-1021)
+#endif
+
+#ifndef __cpp_aggregate_paren_init
+# define __cpp_aggregate_paren_init 201902L
 #endif
 
 #ifndef __cpp_aggregate_bases
@@ -942,6 +986,10 @@
 
 #ifndef __DEC128_MAX__
 # define __DEC128_MAX__ 9.999999999999999999999999999999999E6144DL
+#endif
+
+#ifndef __cpp_constinit
+# define __cpp_constinit 201907L
 #endif
 
 #ifndef __INT_FAST32_TYPE__
@@ -1033,7 +1081,7 @@
 #endif
 
 #ifndef __cpp_constexpr
-# define __cpp_constexpr 201603L
+# define __cpp_constexpr 202002L
 #endif
 
 #ifndef __GCC_ATOMIC_WCHAR_T_LOCK_FREE
@@ -1305,7 +1353,7 @@
 #endif
 
 #ifndef __cpp_nontype_template_args
-# define __cpp_nontype_template_args 201411L
+# define __cpp_nontype_template_args 201911L
 #endif
 
 #ifndef __DEC32_MANT_DIG__
@@ -1340,6 +1388,14 @@
 # define __INT_FAST64_WIDTH__ 64
 #endif
 
+#ifndef __cpp_nontype_template_parameter_class
+# define __cpp_nontype_template_parameter_class 201806L
+#endif
+
+#ifndef __cpp_concepts
+# define __cpp_concepts 202002L
+#endif
+
 #ifndef __cpp_decltype
 # define __cpp_decltype 200707L
 #endif
@@ -1366,6 +1422,10 @@
 
 #ifndef __UINT_FAST64_TYPE__
 # define __UINT_FAST64_TYPE__ long long unsigned int
+#endif
+
+#ifndef __cpp_constexpr_in_decltype
+# define __cpp_constexpr_in_decltype 201711L
 #endif
 
 #ifndef __cpp_inline_variables
@@ -1644,6 +1704,10 @@
 # define __cpp_alias_templates 200704L
 #endif
 
+#ifndef __cpp_constexpr_dynamic_alloc
+# define __cpp_constexpr_dynamic_alloc 201907L
+#endif
+
 #ifndef WINNT
 # define WINNT 1
 #endif
@@ -1701,7 +1765,7 @@
 #endif
 
 #ifndef __cpp_deduction_guides
-# define __cpp_deduction_guides 201703L
+# define __cpp_deduction_guides 201907L
 #endif
 
 #ifndef __BFLT16_NORM_MAX__
@@ -1813,7 +1877,7 @@
 #endif
 
 #ifndef __cpp_generic_lambdas
-# define __cpp_generic_lambdas 201304L
+# define __cpp_generic_lambdas 201707L
 #endif
 
 #ifndef __SSE_MATH__
@@ -1865,7 +1929,7 @@
 #endif
 
 #ifndef __cpp_init_captures
-# define __cpp_init_captures 201304L
+# define __cpp_init_captures 201803L
 #endif
 
 #ifndef __ATOMIC_ACQ_REL
