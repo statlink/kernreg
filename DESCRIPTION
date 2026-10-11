@@ -1,7 +1,7 @@
 Package: kernreg
 Type: Package
 Title: Nadaraya-Watson Kernel Regression
-Version: 1.0
+Version: 1.1
 Authors@R: c(person("Michail", "Tsagris", role = c("aut", "cre"), email = "mtsagris@uoc.gr"),
             person("Christos", "Adam", role = "aut", email = "econp266@econ.soc.uoc.gr",
              comment = c(ORCID = "0009-0003-3244-7034")))

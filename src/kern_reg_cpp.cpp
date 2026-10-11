@@ -368,13 +368,11 @@ SEXP kern_reg_parallel(const SEXP xnew_,
     if (d == 1) {
       NumericVector out_vec(nu);
       KernRegWorkerSingleH1 worker(x, xnew, y, h, type, out_vec);
-      tbb::global_control gc(tbb::global_control::max_allowed_parallelism, ncores);
       parallelFor(0, nu, worker);
       return out_vec;
     } else {
       NumericMatrix out(nu, d);
       KernRegWorkerMultiH1 worker(x, xnew, y, h, type, out);
-      tbb::global_control gc(tbb::global_control::max_allowed_parallelism, ncores);
       parallelFor(0, nu, worker);
       
       if (has_colnames)
@@ -390,7 +388,6 @@ SEXP kern_reg_parallel(const SEXP xnew_,
   if (d == 1) {
     NumericMatrix out(nu, len_h);
     KernRegWorkerMultiH1Mat worker(x, xnew, y, h_, type, out);
-    tbb::global_control gc(tbb::global_control::max_allowed_parallelism, ncores);
     parallelFor(0, nu, worker);
     
     CharacterVector cn(len_h);
@@ -407,7 +404,6 @@ SEXP kern_reg_parallel(const SEXP xnew_,
   // ---- CASE 3: multiple bandwidths, d > 1 ----
   List out(len_h);
   KernRegWorkerMultiHList worker(x, xnew, y, h_, type, out);
-  tbb::global_control gc(tbb::global_control::max_allowed_parallelism, ncores);
   parallelFor(0, nu, worker);
   
   // add dimnames and list names
@@ -669,6 +665,7 @@ SEXP kern_reg(const SEXP xnew,
   
 #if RCPP_PARALLEL_USE_TBB
   if (ncores > 1) {
+    tbb::global_control gc(tbb::global_control::max_allowed_parallelism, ncores);
     return kern_reg_parallel(xnew, y, x, h, type, ncores);
   } else {
     return kern_reg_cpp(xnew, y, x, h, type);
